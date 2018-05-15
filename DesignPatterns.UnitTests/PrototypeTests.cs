@@ -25,4 +25,5 @@ namespace DesignPatterns.UnitTests {
             Assert.That(john.Position, Is.EqualTo("Developer"));
         }
     }
+
 }
