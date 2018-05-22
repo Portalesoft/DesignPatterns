@@ -1,6 +1,7 @@
 ﻿using System.Linq;
 using DesignPatterns.Patterns.Adapter;
 using NUnit.Framework;
+using Square = DesignPatterns.SOLID.Solutions.Square;
 
 namespace DesignPatterns.UnitTests {
 

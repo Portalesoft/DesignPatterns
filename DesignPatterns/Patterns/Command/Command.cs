@@ -17,14 +17,14 @@ namespace DesignPatterns.Patterns.Command {
 
     public class BankAccount {
         private int _balance;
-        private readonly int _overdraftLimit = -500;
+        private const int OverdraftLimit = -500;
 
         internal void Deposit(int amount) {
             _balance += amount;
         }
 
         internal bool Withdraw(int amount) {
-            if (_balance - amount < _overdraftLimit) return false;
+            if (_balance - amount < OverdraftLimit) return false;
             _balance -= amount;
             return true;
         }
